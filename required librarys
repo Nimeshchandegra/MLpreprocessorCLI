@@ -1,0 +1,78 @@
+1: pandas(pip install pandas)
+2: numpy
+3: seaborn
+4: scikit_learn
+
+
+
+
+### 9-78
+print('please enter the task you want to perform')
+    print()
+
+    task = [
+    '1. Data Description',
+    '2. Handling NULL Values',
+    '3. Encoding Categorical Data',
+    '4. Feature Scaling of the Dataset',
+    '5. Download the modified dataset'
+]
+    for tasks in task:
+        print(tasks)
+    print()
+
+    while 1:
+        task_selected = int(
+            input('select the task u want to perform(press 0 to exit):'))
+        if task_selected == 0:
+            print('exit')
+            break
+
+# function for Data Description
+        elif task_selected == 1:
+            print('choose the task you want to perform for Data Description process')
+            task_Description = [
+                '1. describe a specific column',
+                '2. describe all column ',
+                '3. show dataset'
+                '0. go to tasks selection'
+            ]
+            for tasks in task_Description:
+                print(tasks)
+
+            while True:
+
+                task_selected_description = int(input('select the task u want to perform(press 0 to exit):'))
+                if task_selected_description == 0:
+                    print('task selection')
+                    break
+                elif task_selected_description == 1:
+                    # function
+                    continue
+
+                elif task_selected_description == 2:
+                    # function
+                    continue
+                elif task_selected_description == 3:
+                    # function
+                    continue
+# function for Handling NULL Values
+        elif task_selected == 2:
+            print('function for Handling NULL Values')
+            continue
+
+# function for Encoding Categorical Data
+        elif task_selected == 3:
+            print(' function for Encoding Categorical Data')
+            continue
+
+# function for Feature Scaling
+        elif task_selected == 4:
+            print('function for Feature Scaling ')
+            continue
+
+# function for Download the modified dataset
+        elif task_selected == 5:
+            print('function for Download the modified dataset')
+            continue
+###
