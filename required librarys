@@ -6,6 +6,27 @@
 
 
 
+
+for git --
+###
+git add .
+git commit -m ""
+git push
+###
+
+
+
+
+###
+def to_lower_case(col):
+    for i in range(len(col)):
+        col[i] = col[i].lower()
+    return col
+###
+
+
+
+
 ### 9-78
 print('please enter the task you want to perform')
     print()

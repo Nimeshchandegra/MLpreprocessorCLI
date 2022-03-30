@@ -1,6 +1,4 @@
 
-import tasksmenu
-
 def func_task_Description():
     print()
     print('choose the task you want to perform for Data Description process')
@@ -21,7 +19,7 @@ def func_task_Description():
         if task_selected_description == 0:
             tasksmenu.func_task()
         elif task_selected_description == 1:
-            # function column_info(dataset)
+            function.column_info(dataset)
             # function column_describe(dataset)
             continue
 

@@ -1,18 +1,10 @@
-"""
+import pandas as pd
+from os import path
+import sys
 
-supported_extension=['.csv']
 
-def data_Input(data):
-    filename, file_extension = os.path.splitext(data)
+supported_extension = '.csv'
 
-    if file_extension != supported_extension:
-        print('provide file name with pathand extension')
-    else:
-        try:
-            df=pd.read_csv(filename+file_extension)
-            return df
-        except:
-            return print("dataset not found please provide valid file")
 
 
 
@@ -67,7 +59,7 @@ def to_lower_case(col):
         col[i] = col[i].lower()
     return col
 
-"""
+
 
 
 
