@@ -1,9 +1,13 @@
 import pandas as pd
 from os import path
 import sys
+from sklearn.datasets import load_iris
+from tabulate import tabulate
 
 
 supported_extension = '.csv'
+df = pd.read_csv('dataset_clinic.csv')
+target_columns = 'diagnosis'
 
 
 
@@ -61,5 +65,22 @@ def to_lower_case(col):
 
 
 
+def unique_values(dataset):
+    object_col = dataset.select_dtypes(include='object')
+    i=0
+
+    for col in object_col:
+        col_dict = {col : str(dataset[col].nunique())}
+        print(col_dict)
+        i=i+1
+
+
+
+
+label_encoder()
+
+print(
+df.head(10)
+)
 
 
